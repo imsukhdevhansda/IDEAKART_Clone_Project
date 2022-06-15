@@ -253,12 +253,87 @@
 
 
 #products{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 85%;
-    height: 500px;
+    /* height: 500px; */
     margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,250);
+    gap: 20px;
+    
+}
+#head{
+    margin-left: 7%;
+    margin-top: 2%;
+    font-family: serif;
+    font-size: 25px;
+    font-weight: 100;
 }
 
+.bookBox{
+    border: 1px solid rgba(128, 128, 128, 0.815);
+    border-radius: 5px;
+    padding: 15px;
+    height: 500px;
+    cursor: pointer;
+    
+
+   
+}
+.bookImg{
+    width: 100%;
+    height: 70%;
+    /* margin: 20px; */
+    /* padding: 5px; */
+}
+
+.bookTitle{
+    font-family: serif;
+    font-weight: 100;
+    line-height: 19px;
+    margin-top: 20px;
+    
+}
+
+.bookPrice{
+    color: #017bfeb2;
+    margin-top: 5px;
+}
+
+.viewBox{
+    /* border: 1px solid green; */
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-top: 3px;
+    cursor: pointer;
+    border-top: 1px solid rgba(128, 128, 128, 0.651);
+    align-items: center;
+    
+
+}
+.bookView{
+    border-right: 1px solid rgba(128, 128, 128, 0.623);
+}
+
+.bookView, .bookDetails{
+    /* border: 1px solid teal;   */
+    color: #017bfeb2;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: 100;
+    height: 25px;
+    
+
+}
+.bookView :hover{
+    border-bottom: #017bfe  ;
+}
 
 
 

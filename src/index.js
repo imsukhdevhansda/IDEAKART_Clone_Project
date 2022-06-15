@@ -10,13 +10,20 @@ getBookData(url)
 
 };
 
+let bestBooks = ()=>{
+
+    let url = `https://www.googleapis.com/books/v1/volumes?maxResults=40&q=to reader books`
+    getBookData(url)
+
+
+}
+
 
 let getBookData = async (url)=>{
     
     try{
     let res = await fetch(url);
     let data =await res.json();
-    console.log(data.items);
     appendBookData(data.items)
 
     }
@@ -26,6 +33,7 @@ let getBookData = async (url)=>{
     
     
 }
+bestBooks()
 
 
 let result = document.getElementById('products');
@@ -33,13 +41,13 @@ let result = document.getElementById('products');
 let appendBookData = (data)=>{
 
     document.getElementById('products').innerHTML = null;
-    // let i = 0 ;
+
 
     data.forEach( ( {volumeInfo } )=>{
         
        
-        if( typeof(volumeInfo.imageLinks) === 'undefined' ){
-            // console.log(i+" is undefined");
+        if( typeof(volumeInfo.imageLinks) === 'undefined' || typeof(volumeInfo.subtitle) === 'undefined' || typeof(volumeInfo.pageCount) === 'undefined'  ){
+            // console.log("It is undefined data");
             
         }
         else{
@@ -58,12 +66,23 @@ let appendBookData = (data)=>{
         let price = document.createElement('h4');
         price.setAttribute('class', 'bookPrice');
         price.innerText = volumeInfo.pageCount
+
+        let viewBox = document.createElement('div');
+        viewBox.setAttribute('class', "viewBox")
         
-        box.append(img, title, price);
+        let view = document.createElement('h4');
+        view.setAttribute('class', "bookView")
+        view.innerText = "View Now";
+
+        let more = document.createElement('h4');
+        more.innerText = "More details"
+        more.setAttribute('class', "bookDetails")
+        
+        viewBox.append(view, more)
+        box.append(img, title, price,viewBox);
         result.append(box);
         }
 
-        // i++
     });
 
 
