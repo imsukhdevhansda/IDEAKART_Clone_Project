@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <div id="navbar_div"></div>
+    <div id="about_para">
+    <p id="about_para1"> Ideakart is a site that gives u an idea about the book you want to buy. We offer a huge collection of books in diverse categories.</p>
+    <p id="about_para2">We have a user friendly search engine and a quick delivery system. With this we even provide best discounts on our books. You can write to us for any idea or any help you need.</p>
+    <p id="about_para3">Ideakart is a site that gives u an idea and a platform for the book you want. We offer a huge collection of books in diverse categories.</p>
+    <p id="about_para4">We have a user friendly search engine and a quick delivery system. With this we even provide best discounts on our books. You can write to us for any idea or any help you need.</p>
+    </div> 
+    <div id="footer_div"></div>
+</body>
+</html>
+
+<script type="module">
+
+import navbar from '../component/navbar.js'
+let navbar_div = document.getElementById('navbar_div');
+navbar_div.innerHTML = navbar();    
+
+
+
+import footer from '../component/footer.js'
+let footer_div = document.getElementById('footer_div');
+footer_div.innerHTML = footer();
+
+
+</script>

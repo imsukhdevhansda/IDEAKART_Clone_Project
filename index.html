@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideakart.com</title>
+    <link rel="shortcut icon" href="https://ideakart.com/assets/favicon-dc419e035c991f8f9c077a885c6ba6d589c3b552a1e4073cf07a392c54b93db7.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
     
     <div id="navbar_div"></div>
-    
+
+    <div id="products"></div>
+
+    <div id="footer_div"></div>
+ 
 </body>
 </html>
 <script src="./src/index.js"></script>
+
 
 <script type="module">
 
 import navbar from './component/navbar.js'
 let navbar_div = document.getElementById('navbar_div');
 navbar_div.innerHTML = navbar();
+
+
+
+// import footer from './component/footer.js'
+// let footer_div = document.getElementById('footer_div');
+// footer_div.innerHTML = footer();
 
 
 

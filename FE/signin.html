@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <div id="navbar_div"></div>
+
+    <div id="signin">
+        <h2>Log in</h2>
+        <h4>Email</h4>
+        <input type="text" id="signIn_email">
+        <h4>Password</h4>
+        <input type="password" id="signIn_password">
+        <input type="checkbox" id="checkbox">
+        <span>Remember me</span>
+        <button onclick="verifyData()" id="login_btn">Log in</button>
+        <a href="signup.html" id="sign_up_link">  Sign Up </a>
+    
+        <a href="#" id="signin_forgot">Forgot your Password?</a>
+    </div>
+
+    <div id="footer_div"></div>
+</body>
+</html>
+<script src="../src/signin.js"></script>
+
+<script type="module">
+
+    import navbar from '../component/navbar.js'
+    let navbar_div = document.getElementById('navbar_div');
+    navbar_div.innerHTML = navbar();
+
+import footer from '../component/footer.js'
+let footer_div = document.getElementById('footer_div');
+footer_div.innerHTML = footer();
+</script>

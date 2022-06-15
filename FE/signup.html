@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <div id="navbar_div"></div>
+
+    <div id="signup">
+        <h2>Sign up</h2>
+        <h4>Name</h4>
+        <input type="text" id="signup_name">
+        <h4>Mobile Number</h4>
+        <input type="text" id="signup_number">
+        <h4>Email</h4>
+        <input type="email" id="signup_email">
+        <h4>Password  (6 characters minimum)</h4>
+        <input type="password" id="signup_password">
+        <h4>Password confirmation</h4>
+        <input type="password" id="signup_cpassword">
+        <button onclick="getUserData()" id="signup_btn">Sign up</button>
+        <a href="../FE/signin.html">Log in</a>
+       
+       
+    </div>
+    <div id="footer_div"></div>
+    
+</body>
+</html>
+<script src="../src/signup.js"></script>
+
+<script type="module">
+
+    import navbar from '../component/navbar.js'
+    let navbar_div = document.getElementById('navbar_div');
+    navbar_div.innerHTML = navbar();
+
+import footer from '../component/footer.js'
+let footer_div = document.getElementById('footer_div');
+footer_div.innerHTML = footer();
+
+</script>
