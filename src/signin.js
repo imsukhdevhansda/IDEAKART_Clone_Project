@@ -1,7 +1,6 @@
 
 let verifyData = ()=>{
     let userData =  JSON.parse(localStorage.getItem('bookUserData'));
-    console.log(userData);
 
     let vUsermail = document.getElementById('signIn_email').value;
     let vUserpass = document.getElementById('signIn_password').value;

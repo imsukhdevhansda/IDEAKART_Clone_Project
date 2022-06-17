@@ -5,11 +5,17 @@ let userData = JSON.parse(localStorage.getItem('bookUserData')) || [];
 let getUserData = ()=>{
     let userCPass =document.getElementById('signup_cpassword').value; 
 
+    let user_name = document.getElementById('signup_name').value 
+    let user_mob  = document.getElementById('signup_number').value 
+    let user_email  = document.getElementById('signup_email').value 
+    let user_password  = document.getElementById('signup_password').value
+    if(user_name !== "" && user_mob !== "" && user_email !== "" && user_password !== "" && userCPass !== ""){
+
     let userObj ={
-        user_name  : document.getElementById('signup_name').value ,
-        user_mob  : document.getElementById('signup_number').value ,
-        user_email  : document.getElementById('signup_email').value ,
-        user_password  : document.getElementById('signup_password').value ,
+        user_name  ,
+        user_mob  ,
+        user_email  ,
+        user_password  
         
     }
 
@@ -29,4 +35,10 @@ let getUserData = ()=>{
     else{
         alert('Your password is not matching');
     }
-};
+}
+else{
+    alert("Please fill all the fields")
+}
+
+
+}

@@ -96,7 +96,6 @@ let appendBookData = (data)=>{
 };
 
 let  buyItems = (elem) =>{
-    console.log(elem)
 
     localStorage.setItem('buyProduct', JSON.stringify(elem))
     window.location.href = '../FE/buy.html'

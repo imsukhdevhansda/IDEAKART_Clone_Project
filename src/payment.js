@@ -6,6 +6,8 @@ document.querySelector("#TotalPeise").innerHTML = "Rs." + " " +  price.pageCount
 
 document.querySelector("#Calculate").innerHTML += 100 + 50 + price.pageCount;
 
+
+
 function Final() {
   let card = document.querySelector("#card").value;
   let Cvv = document.querySelector("#Cvv").value;
@@ -23,13 +25,4 @@ function Final() {
   }
 }
 
-
-
-
-function gayab() {
-  let a = document.querySelector("#checked");
-  if (a.checked) {
-    a.checked = false;
-  }
-}
 
