@@ -332,16 +332,193 @@
 
 }
 .bookView :hover{
-    border-bottom: #017bfe  ;
+    border-bottom:1PX solid #017bfe  ;
+}
+
+
+/* Main Products Css end  */
+
+
+
+/* Buy page Css start  */
+
+
+#buy_div{
+    /* border: 1px solid red; */
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+justify-content: space-between;
+    height: auto;
+    font-family: Helvetica;
+}
+
+#buy_part1{
+    /* border: 1px solid teal; */
+    width: 30%;
+
+}
+
+#buy_img_div{
+    border: 1px solid gray;
+    height: 470px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#buy_img{
+    width: 100%;
+    height: 100%;
+}
+
+#best_buy{
+    margin-top: 20px;
+    font-size: 15px;
+}
+#b_inner{
+    font-weight: bold;
+}
+
+#buy_btn_div{
+    /* border: 1px solid orangered; */
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+
+}
+#buy_btn_div h4{
+    font-size: 25px;
+}
+
+
+#buy_btn_div button{
+    border: 0px;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f0ad4e;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#casback{
+    /* border: 1px solid green; */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold ;
+    color: #ffffff;
+    background-color: #9acd32;
+    
+
+}
+#book_speci{
+    font-size: 25px;
+    font-weight: 100;
+    margin: 15px 0px 10px 0px;
+}
+
+#spe_detail{
+    /* border: 1px solid brown; */
+    height: auto;
+}
+#spe_detail div{
+    /* border: 1px solid orchid; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.671);
+}
+#spe_detail div h4{
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+
+#spe_detail_c1,#spe_detail_c3, #spe_detail_c5{
+    background-color: #f9f9f9;
+}
+
+#b,#l,#n,#a,#p{
+    font-size: 14px;
+}
+
+#b{
+
+    margin-left: 38%;
+    
+}
+#l{
+    margin-left: 33%;
+
+}
+#n{
+    margin-left: 16%;
+
+}
+#a{
+    margin-left: 39%;
+
+}
+#p{
+    margin-left: 33%;
+
 }
 
 
 
 
 
+#buy_part2{
+    /* border: 1px solid blue; */
+    width: 67%;
+}
+#buy_r_btn{
+    border: 0px;
+    font-size: 18px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: #ffffff;
+    /* float: right; */
+    margin: 10px 0px 10px 550px;
+    cursor: pointer;
+}
+
+.bi-arrow-clockwise{
+    font-size: 20px;
+}
+
+
+#buy_title{
+    font-size: 30px;
+}
+
+
+#buy_dis_div{
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 30px 15px 15px 15px;
+    background-color: #f5f5f5;
+}
+
+#buy_s_title{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#buy_dis{
+    margin-top: 25px;
+    line-height: 22px;
+    font-size: 15px;
+}
 
 
 
-
-/* Main Products Css end  */
+/* Buy page Css end  */
 

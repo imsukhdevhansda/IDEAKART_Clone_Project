@@ -24,6 +24,7 @@ let getBookData = async (url)=>{
     try{
     let res = await fetch(url);
     let data =await res.json();
+    console.log()
     appendBookData(data.items)
 
     }
@@ -77,6 +78,10 @@ let appendBookData = (data)=>{
         let more = document.createElement('h4');
         more.innerText = "More details"
         more.setAttribute('class', "bookDetails")
+
+        box.addEventListener('click', ()=>{
+            buyItems(volumeInfo)
+        })
         
         viewBox.append(view, more)
         box.append(img, title, price,viewBox);
@@ -89,5 +94,14 @@ let appendBookData = (data)=>{
 
 
 };
+
+let  buyItems = (elem) =>{
+    console.log(elem)
+
+    localStorage.setItem('buyProduct', JSON.stringify(elem))
+    window.location.href = '../FE/buy.html'
+
+
+}
 
 

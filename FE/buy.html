@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy</title>
+    <link rel="shortcut icon" href="https://ideakart.com/assets/favicon-dc419e035c991f8f9c077a885c6ba6d589c3b552a1e4073cf07a392c54b93db7.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <div id="navbar_div"></div>
+    
+    <div id="buy_div">
+
+        <div id="buy_part1">
+            <div id="buy_img_div">
+                <img  id="buy_img" alt="">
+            </div>
+            <p id="best_buy">Buy it at <span id="b_inner"> best price</span> from here</p>
+
+            <div id="buy_btn_div">
+                <h4>RS. <span id="buy_price"></span></h4>
+                <button onclick="goToPayment()" >Buy Now</button>
+            </div>
+            <p id="casback">Get Instant Cashback when you pay using Amazon Pay... Click Here</p>
+            <h3 id="book_speci">Book Specification</h3>
+
+            <div id="spe_detail">
+
+                <div id="spe_detail_c1"> <h4>Binding</h4> <span id="b">Hardcover</span> </div>
+                <div> <h4>Language</h4> <span id="l"></span></div>
+                <div id="spe_detail_c3"> <h4>Number Of Pages</h4> <span id="n">358</span> </div>
+                <div> <h4>Author</h4> <span id="a"></span> </div>
+                <div id="spe_detail_c5"> <h4>Publisher</h4> <span id="p"></span> </div>
+                <!-- <div> <h4></h4> <span></span> </div>
+                <div> <h4></h4> <span></span> </div>
+                <div> <h4></h4> <span></span> </div> -->
+            </div>
+        </div>
+
+
+
+
+        <div id="buy_part2">
+            <p>Referesh</p>
+            <button id="buy_r_btn">Refresh Prices <i class="bi bi-arrow-clockwise"></i></button>
+            <h2 id="buy_title"></h2>
+            <div id="buy_dis_div">
+                <h2 id="buy_s_title"></h2>
+                <p id="buy_dis"></p>
+            </div>
+        </div>
+    </div>
+
+<div id="footer_div"></div>
+</body>
+</html>
+<script src="../src/buy.js"></script>
+
+<script type="module">
+
+import navbar from '../component/navbar.js'
+let navbar_div = document.getElementById('navbar_div');
+navbar_div.innerHTML = navbar();
+
+
+import footer from '../component/footer.js'
+let footer_div = document.getElementById('footer_div');
+footer_div.innerHTML = footer();
+
+</script>
